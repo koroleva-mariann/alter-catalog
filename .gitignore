@@ -1,0 +1,7 @@
+app1304/__pycache__/
+catalog_db/
+db_django/
+catalog/__pycache__/
+catalog/migrations/__pycache__/
+.vs/
+env/

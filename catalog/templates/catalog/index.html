@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Docs</title>
+</head>
+
+<body>
+
+    <h1>Docs</h1>
+    <p>
+        Hi! This documentation describes how to use this app using cURL which is a command line tool and library for transferring data with URLs. I will use the hard coded URLs and some predefined values for my own convenience.
+    </p>
+
+    <h2>1. Get a list of the existing products</h2>
+    <p>To get a list of the existing products run the following command:</p>
+    <p><code>curl -X POST -H 'Content-Type: application/json' http://localhost:8000/product/list</code></p>
+
+    <h2>2. Update a product price</h2>
+    <p>To update a product price run the following command:</p>
+    <p><code>curl -X POST -H 'Content-Type: application/json' -d "{\"product_id\":1, \"price\":777.77}" http://localhost:8000/product/update</code></p>
+
+    <h2>3. See the price history</h2>
+    <p>To see the price history for a certain product run the following command:</p>
+    <p><code>curl -X POST -H 'Content-Type: application/json' -d "{\"product_id\":1}" http://localhost:8000/product/pricelog</code></p>
+</body>
+</html>
